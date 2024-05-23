@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.separador {
+  width: 40rem;
+  height: 2px;
+  background-color:  rgb(213, 216, 235);
+  margin: 1rem auto;
+}

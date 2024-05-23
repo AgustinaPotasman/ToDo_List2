@@ -1,0 +1,13 @@
+input {
+    border-radius: 3px;
+    border: solid 2px #f1f1f1;
+    padding: .2rem;
+    min-width: 15rem;
+    min-height: inherit;
+}
+
+
+input:focus {
+    outline: none;      /* Remove default outline and use border or box-shadow */
+    box-shadow: -2px 2px 0 0 rgb(193, 202, 250);
+}
