@@ -5,6 +5,7 @@ import './NuevoToDo.css';
 function NuevoToDo({ToDos, setToDos}) {
   const agregarToDo = (e) => {
       let newId = e + (ToDos.lenght + 1)
+      console.log(newId)
       setToDos([...ToDos, {
         id: newId,
         contenido: e.target.content.value,

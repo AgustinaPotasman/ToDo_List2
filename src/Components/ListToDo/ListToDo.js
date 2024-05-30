@@ -2,16 +2,18 @@ import './ListToDo.css';
 import Elemento from '../Elemento/Elemento';
 
 function ListToDo({ setToDo, ToDos }) {
-    let i = -1;
-    return <div className='ToDos'>
-        {   
-            ToDos.map(t => {
-            i++
-            return (
-                <Elemento id={i} contenido={t.contenido} tachado={t.tachado} setToDo={setToDo} ToDos={ToDos}></Elemento>)
-            })
-        }
-    </div>;
+
+    return (
+     <div className='ToDoS'>
+            {   
+                ToDos.map(t => {
+                    return (<Elemento id={t.id} contenido={t.contenido} tachado={t.tachado} setToDo={setToDo} ToDos={ToDos}></Elemento>)
+                }
+            )}
+    </div>
+
+    );
+    
 }
 
 export default ListToDo;

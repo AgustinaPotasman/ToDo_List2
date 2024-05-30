@@ -1,3 +1,9 @@
 input[type="checkbox"]{
     accent-color: rgb(0, 0, 179);
 }
+
+label {
+    min-width: inherit;
+    min-height: 50px;
+    background-color: rgb(10, 71, 124);
+}
