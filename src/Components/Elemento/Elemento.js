@@ -1,7 +1,10 @@
 import './Elemento.css';
 
-function Elemento({ id, contenido, tachado, ToDos, setToDo }) {
-    return  <label key={id}>{contenido}</label>;
+function Elemento({ contenido}) {
+    return (
+        <div><label>{contenido}</label></div>
+    
+    );
 }
 // onclick={borrar(`D${id}`, id)}
 // onclick={tachar(id)}
