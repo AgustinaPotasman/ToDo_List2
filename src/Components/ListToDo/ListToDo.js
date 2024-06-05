@@ -10,7 +10,7 @@ function ListToDo({ setToDo, ToDos }) {
                     ToDos.map((t) => {
                         i++;
                         return (
-                            <Elemento isEven={(i % 2 === 0)} contenido={t.contenido} tachado={t.tachado} setToDo={setToDo} ToDos={ToDos}></Elemento>
+                            <Elemento isEven={(i % 2 === 0)} id={i} contenido={t.contenido} tachado={t.tachado} setToDo={setToDo} ToDos={ToDos}></Elemento>
                         )
                     }
                 )}

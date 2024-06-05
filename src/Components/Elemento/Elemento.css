@@ -28,3 +28,7 @@ label {
     height: auto;
     margin-right: .5rem;
 }
+
+.tachado {
+    text-decoration: line-through
+}

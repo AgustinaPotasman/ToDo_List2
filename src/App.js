@@ -8,8 +8,6 @@ import ListToDo from './Components/ListToDo/ListToDo'
 function App() {
   const [ToDos, setToDos] = useState([]);
 
-/*
-      */
   return (
     <div className="App">
       <Titulo sendText={"To Do"}></Titulo>
