@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Titulo from './Components/Titulo/Titulo';
 import NuevoToDo from './Components/NuevoToDo/NuevoToDo';
 import TareaMasRapida from './Components/TareaMasRapida/TareaMasRapida';
@@ -8,15 +8,6 @@ import ListToDo from './Components/ListToDo/ListToDo'
 function App() {
   const [ToDos, setToDos] = useState([]);
 
-  useEffect(() => {
-    setToDos([...ToDos, {
-      id: "e1",
-      contenido: "hola",
-      tachado: false,
-      fechaYhoraCreacion: new Date(),
-      fechaYhoraTachado: false
-    }]);
-  }, [])
 /*
       */
   return (

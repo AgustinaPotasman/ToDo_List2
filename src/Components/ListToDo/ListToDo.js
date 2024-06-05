@@ -2,13 +2,15 @@ import './ListToDo.css';
 import Elemento from '../Elemento/Elemento';
 
 function ListToDo({ setToDo, ToDos }) {
-/*<Elemento id={i} contenido={t.contenido} tachado={t.tachado} setToDo={setToDo} ToDos={ToDos}></Elemento>*/
+/**/
+    let i = -1;
     return (
         <div className=''>
                 {   
                     ToDos.map((t) => {
+                        i++;
                         return (
-                            <Elemento contenido={t.contenido}></Elemento>
+                            <Elemento isEven={(i % 2 === 0)} contenido={t.contenido} tachado={t.tachado} setToDo={setToDo} ToDos={ToDos}></Elemento>
                         )
                     }
                 )}
