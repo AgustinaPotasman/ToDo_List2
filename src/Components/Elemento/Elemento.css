@@ -7,17 +7,24 @@ input[type="checkbox"]{
 }
 label {
     color: #000;
+    margin-left: .5rem;
 }
 
 .elemento {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 20rem;
-    padding: .5rem;
+    width: 22rem;
+    padding: .5rem 1rem;
     margin: 0 auto;
 }
 
 .elemento_content {
     display: flex;
+}
+
+.trash {
+    width: 1.5rem;
+    height: auto;
+    margin-right: .5rem;
 }

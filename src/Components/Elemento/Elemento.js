@@ -1,9 +1,8 @@
 import './Elemento.css';
-import trash from "../../../public/trash-solid.svg";
 
 function Elemento({ isEven, contenido, tachado, setToDo, ToDos}) {
     const esTachado = (tachado) => { return tachado === true }
-    const esPar = (isEven) => { if (isEven === true) {return "#f1f1f1"} else {return "#ffffff"}}
+    const esPar = (isEven) => { if (isEven === true) {return "#f1f1f1"} else {return "#dbdbdb"}}
     const tachar = () => {
         
     }
@@ -13,7 +12,7 @@ function Elemento({ isEven, contenido, tachado, setToDo, ToDos}) {
                 <input type="checkbox" defaultchecked={esTachado(tachado)} onChange={tachar}/>
                 <label>{contenido}</label>
             </div>
-            <img src={trash}/>
+            <img src={require('../../trash-solid.svg').default} alt="Borrar elemento" className='trash'/>
         </div>
     
     );

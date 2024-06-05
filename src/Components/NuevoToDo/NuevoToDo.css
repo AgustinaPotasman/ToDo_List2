@@ -1,5 +1,6 @@
 .NuevoToDo {
-    min-height: 1.5rem;
+    justify-content: space-between;
+    width: 24rem;
     display: flex;
-    justify-content: center;
+    margin: 5px auto;
 }
